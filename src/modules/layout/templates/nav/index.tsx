@@ -65,10 +65,9 @@ export default function Nav() {
                     </div>
                   </div>
 
-                  <div className="flex-row inline-flex w-screen sm:w-60 sm:order-2 order-1 place-items-center justify-around items-end text-gray-500">
-                    
-                    <button
-                      className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm rounded-lg sm:hidden"
+                  <div className="flex-row inline-flex w-screen sm:w-60 sm:order-2 order-1 place-items-center justify-center items-end">
+                  <button
+                      className="inline-flex items-center p-2 w-1/2 h-10 justify-start text-sm rounded-lg sm:hidden"
                       data-collapse-toggle="search-navbar"
                       type="button"
                       aria-controls="navbar-search"
@@ -94,7 +93,8 @@ export default function Nav() {
 
                     <button
                       type="button"
-                      className="sm:hidden rounded-lg text-sm p-2.5 me-1"
+                      className="sm:hidden
+                   rounded-lg text-sm p-2.5 me-1"
                       data-collapse-toggle="search-navbar"
                       aria-controls="search-navbar"
                       aria-expanded="false"
@@ -116,7 +116,7 @@ export default function Nav() {
                       </svg>
                       <span className="sr-only">Search</span>
                     </button>
-
+                    
                     <div className="relative hidden sm:block w-40 mr-4">
                       <div className="absolute inset-y-0 end-2 flex items-center ps-3 pointer-events-none">
                         <svg
@@ -139,13 +139,9 @@ export default function Nav() {
                       <input
                         type="text"
                         id="search-navbar"
-                        className="block w-full p-2 ps-2 text-sm bg-transparent border-b outline-none placeholder:text-gray-500 border-gray-500"
+                        className="block w-full p-2 ps-2 text-sm bg-transparent border-0 border-b border-gray-500 placeholder:text-gray-500"
                         placeholder="Search..."
                       />
-                    </div>
-                    
-                    <div 
-                      className="bunny-ear-spacer w-20 sm:hidden">
                     </div>
 
                     <BasketProfile/>

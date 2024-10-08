@@ -189,7 +189,7 @@ export default async function Home() {
           />
         </div>
 
-        <div className="w-full h-screen flex place-content-center overflow-hidden absolute top-0 bg-gray-50 -z-50">
+        <div className="BG-desktop w-full h-screen hidden md:flex place-content-center overflow-hidden absolute top-0 bg-gray-50 -z-50">
           <img
             src="https://webnailsbucket.s3.amazonaws.com/beon/halloween2024/Asset+22.png"
             className="Bg w-full h-screen -z-50"
@@ -257,6 +257,37 @@ export default async function Home() {
             />
           </div>
         </div>
+
+        <div className="Mobile-Bg w-full h-screen flex md:hidden place-content-center overflow-hidden absolute top-0 -z-50">
+        
+        <img src="https://webnailsbucket.s3.amazonaws.com/beon/halloween2024/Asset+22mobile.png" 
+          className="BG h-screen absolute -z-40"
+          alt="bg"
+          width={430}
+          height={740}
+          />
+        
+        <img src="https://webnailsbucket.s3.amazonaws.com/rocknails/halloween2024/Asset+12.png" 
+          className="Glass hidden -z-50"
+          alt="bg"
+          width={345}
+          height={690}
+          />
+
+         <img src="https://webnailsbucket.s3.amazonaws.com/beon/halloween2024/Asset+2.png" 
+          className="Blood w-2/3 absolute top-[5.2%] right-0 animate-flowdown16 z-20"
+          alt="bg"
+          width={194}
+          height={449}
+          />
+
+        <img src="https://webnailsbucket.s3.amazonaws.com/pasch/halloween2024/Asset+10croped.png" 
+          className="Belt hidden w-full absolute top-[5.2%] z-20"
+          alt="bg"
+          width={341}
+          height={541}
+          />
+      </div>  
       </div>
     </>
   )

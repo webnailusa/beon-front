@@ -1,6 +1,7 @@
 'use client';
 import { usePathname } from "next/navigation"
 import React from "react"
+import LocalizedClientLink from "@modules/common/components/localized-client-link";
 import Image from "next/image"
 
 const categories = [
@@ -17,7 +18,7 @@ const CatMenu = () => {
   const pathname = usePathname()
   return (
     <>
-      <a href="/categories/manicure"
+      <LocalizedClientLink href="/categories/manicure"
         title="service-link"
         rel="noopener noreferrer"
         className="CatItem flex flex-col items-center justify-start space-y-4"
@@ -39,9 +40,9 @@ const CatMenu = () => {
           }`}>
           Manicure
         </span>
-      </a>
+      </LocalizedClientLink>
 
-      <a href="/categories/pedicure"
+      <LocalizedClientLink href="/categories/pedicure"
         title="service-link"
         rel="noopener noreferrer"
         className="CatItem flex flex-col items-center justify-start space-y-4"
@@ -64,9 +65,9 @@ const CatMenu = () => {
           }`}>
           Pedicure
         </span>
-      </a>
+      </LocalizedClientLink>
       
-      <a href="/categories/nail-enhancement"
+      <LocalizedClientLink href="/categories/nail-enhancement"
         title="service-link"
         rel="noopener noreferrer"
         className="CatItem flex flex-col items-center justify-start space-y-4"
@@ -88,9 +89,9 @@ const CatMenu = () => {
           }`}>
           Nail Enhancement
         </span>
-      </a>
+      </LocalizedClientLink>
       
-      <a href="/categories/waxing"
+      <LocalizedClientLink href="/categories/waxing"
         title="service-link"
         rel="noopener noreferrer"
         className="CatItem flex flex-col items-center justify-start space-y-4"
@@ -112,9 +113,9 @@ const CatMenu = () => {
           }`}>
           Waxing
         </span>
-      </a>
+      </LocalizedClientLink>
 
-      <a href="/categories/prince-princess"
+      <LocalizedClientLink href="/categories/prince-princess"
         title="service-link"
         rel="noopener noreferrer"
         className="CatItem flex flex-col items-center justify-start space-y-4"
@@ -137,9 +138,9 @@ const CatMenu = () => {
           }`}>
           Prince/ Princess
         </span>
-      </a>
+      </LocalizedClientLink>
 
-      <a href="/categories/add-ons"
+      <LocalizedClientLink href="/categories/add-ons"
         title="service-link"
         rel="noopener noreferrer"
         className="CatItem flex flex-col items-center justify-start space-y-4"
@@ -161,7 +162,7 @@ const CatMenu = () => {
           }`}>
           Add-ons
         </span>
-      </a>
+      </LocalizedClientLink>
 
     </>
   )
