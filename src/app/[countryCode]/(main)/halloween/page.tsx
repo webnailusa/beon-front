@@ -48,7 +48,7 @@ export default async function Home() {
       <PopupLoader timeIn={7800} timeOut={22000} style={4} />
 
       <div className="max-w-6xl w-full h-screen -mb-12 sm:-mb-16 p-5 mx-auto items-center overflow-hidden font-futura text-white z-0">
-        <div className="logocontent h-2/3 flex flex-col items-center mx-auto place-content-center z-30">
+        <div className="logocontent h-[60%] md:h-2/3 flex flex-col items-center mx-auto place-content-center z-30">
           <LocalizedClientLink 
             className={`Logo scale-75 md:scale-100 animate-appeared-fade-3 z-40`}
             key={"/booking"}
@@ -95,7 +95,7 @@ export default async function Home() {
 
         
           
-        <div className="widget pb-20 h-1/3 md:inline-flex w-full items-end justify-center space-y-4 xlg:space-y-0 z-30">
+        <div className="widget pb-20 h-[40%] md:h-1/3 md:inline-flex w-full items-end justify-center space-y-4 xlg:space-y-0 z-30">
           <div className="social_widget hidden lg:inline-flex w-1/3 h-20 items-center justify-start space-x-2 z-20">
             <SocialLink />
           </div>
@@ -135,7 +135,7 @@ export default async function Home() {
         </div>
       </div>
 
-      <div className="social_widget lg:hidden w-12 h-60 flex flex-col absolute top-[25vh] bg-theme-3 bg-opacity-25 left-0 rounded-xl items-center justify-around z-20">
+      <div className="social_widget lg:hidden w-12 h-60 flex flex-col absolute top-[25vh] left-0 rounded-xl items-center justify-around z-20">
         <SocialLink />
       </div>
 
@@ -260,29 +260,29 @@ export default async function Home() {
 
         <div className="Mobile-Bg w-full h-screen flex md:hidden place-content-center overflow-hidden absolute top-0 -z-50">
         
-        <img src="https://webnailsbucket.s3.amazonaws.com/beon/halloween2024/Asset+22mobile.png" 
-          className="BG h-screen absolute -z-40"
+        <img src="https://webnailsbucket.s3.amazonaws.com/beon/halloween2024/Asset+B.png" 
+          className="BG w-full absolute top-[80px] z-0"
           alt="bg"
-          width={430}
-          height={740}
+          width={345}
+          height={512}
           />
         
         <img src="https://webnailsbucket.s3.amazonaws.com/rocknails/halloween2024/Asset+12.png" 
-          className="Glass hidden -z-50"
+          className="Glass w-full -z-50"
           alt="bg"
           width={345}
           height={690}
           />
 
          <img src="https://webnailsbucket.s3.amazonaws.com/beon/halloween2024/Asset+2.png" 
-          className="Blood w-2/3 absolute top-[5.2%] right-0 animate-flowdown16 z-20"
+          className="Blood absolute top-[80px] right-0 animate-flowdown16 z-10"
           alt="bg"
           width={194}
           height={449}
           />
 
-        <img src="https://webnailsbucket.s3.amazonaws.com/pasch/halloween2024/Asset+10croped.png" 
-          className="Belt hidden w-full absolute top-[5.2%] z-20"
+        <img src="https://webnailsbucket.s3.amazonaws.com/beon/halloween2024/Asset+11crop.png" 
+          className="Belt w-full absolute top-[57px] z-20"
           alt="bg"
           width={341}
           height={541}
